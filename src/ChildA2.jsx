@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import StateContext from './StateContext.jsx'
 
-export default function ChildA2({ text }) {
+export default function ChildA2() {
+  const text = useContext(StateContext)
   return <h3>{text}</h3>
 }
