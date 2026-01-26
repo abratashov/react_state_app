@@ -5,13 +5,16 @@ import StateContext from './StateContext.jsx'
 
 export default function App() {
   const text = 'Hello World';
+  const name = 'Mike';
+  const value = { text, name };
+
   return (
-    <StateContext.Provider value={text}>
+    <StateContext.Provider value={value}>
       <div>
-        <h1>{text}</h1>
+        <h1>{text} - {name}</h1>
         <ChildA />
         <ChildB />
       </div>
     </StateContext.Provider>
-  );
+  )
 }

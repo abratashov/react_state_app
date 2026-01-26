@@ -1,5 +1,8 @@
 import React from 'react'
 
-const StateContext = React.createContext('Hello World')
+const StateContext = React.createContext({
+  text: '',
+  name: ''
+});
 
-export default StateContext
+export default StateContext;

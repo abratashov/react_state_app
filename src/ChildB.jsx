@@ -4,10 +4,11 @@ import ChildB2 from './ChildB2.jsx'
 import StateContext from './StateContext.jsx'
 
 export default function ChildB() {
-  const text = useContext(StateContext)
+  const { text, name } = useContext(StateContext);
+
   return (
     <div>
-      <h2>{text}</h2>
+      <h2>{text} - {name}</h2>
       <ChildB1 />
       <ChildB2 />
     </div>
